@@ -467,7 +467,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .gallery-grid{grid-template-columns:repeat(2,1fr);}
 }
 @media(max-width:520px){
-  .gallery-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .gallery-item{aspect-ratio:1/1;}
 }
 
 /* ============================================================

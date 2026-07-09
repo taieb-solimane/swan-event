@@ -61,6 +61,14 @@ function initNavbar() {
       links.classList.remove("open");
     });
   });
+
+  // Keep sidebar open when clicking language buttons on mobile
+  links.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      // Don't close sidebar when changing language
+    });
+  });
 }
 
 /* -------------------------------------------------
