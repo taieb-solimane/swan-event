@@ -754,10 +754,12 @@ html[dir="rtl"] .select-wrap::after{right:auto;left:4px;}
     transform:translateX(100%);
     transition:transform .55s var(--ease-lux);
   }
-  html[dir="rtl"] .nav-links{right:auto;left:0;transform:translateX(-100%);}
+  html[dir="rtl"] .nav-links{right:auto;left:0;transform:translateX(-100%);align-items:flex-end;}
+  html[dir="rtl"] .nav-links.open{transform:translateX(0);}
   .nav-links.open{transform:translateX(0);}
   .nav-links a{color:var(--white) !important;font-size:16px;}
   .lang-switch{color:var(--white) !important;margin-top:10px;}
+  html[dir="rtl"] .lang-switch{align-self:flex-end;}
   .nav-toggle{display:flex;}
   .nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
   .nav-toggle.open span:nth-child(2){opacity:0;}
